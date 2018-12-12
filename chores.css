@@ -1,0 +1,71 @@
+.column1 {
+    color:white;
+    font-size: 14pt;
+    font-weight: 600; 
+    margin: 10px 20px;
+    text-align: left; 
+}
+
+.dutyColumns * {
+    color:white;
+    font-size:12pt;
+    font-weight:100;
+    text-align: center
+}
+
+.name{
+    font-size:20pt;
+    font-weight:300;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:10px;
+    color:white;
+    font-weight: bold;
+}
+
+.dutyCard{
+    padding:10px;
+    margin:10px;
+    border:5px groove silver;
+    background-color:hsl(171, 100%, 41%);
+    border-radius: 8px;
+}
+
+.dutyDeadline{
+    margin:10px auto 10px auto;
+    font-weight:bold;
+}
+
+.dutyCard button {
+   background-color:white;
+   color:hsl(171, 100%, 41%);
+   margin-top:15px;
+   border-radius: 5px;
+   font-weight: bolder;
+   font-size:20px;
+}
+
+.dutyCard i{
+    padding:10px auto 10px auto;
+    color:white;
+}
+
+.formSubmit {
+    border-radius: 10px;
+    font-size:20px;
+    color:hsla(171, 100%, 41%, 1);
+    padding:10px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.choreHint {
+    background-color:hsl(171, 100%, 41%);
+    text-align: center; 
+    padding:2%;
+    border-radius: 8px;
+}
+
+.tasks {
+    border-radius: 8px;
+}

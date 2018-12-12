@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TBH Dashboard</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css" />
+  <script src="https://www.gstatic.com/firebasejs/ui/3.4.1/firebase-ui-auth__en.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/3.4.1/firebase-ui-auth.css" />
+
+</head>
+
+<body>
+  <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="home.html">
+        <img src="./tbh-logo-wh-hires.png">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons" id="btnLogout">
+          <a class="button is-primary">
+            Log Out
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <div class="tbh-cards">
+    
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="subtitle is-4">Chores</p>
+          <p><a href="chores.html"><img src="./chores-wh.png" width="80px"></a></p>
+        </div>
+      </div>
+      
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="subtitle is-4">Bills</p>
+          <p><a href="underconstruction.html"><img src="./bills-wh.png" width="80px"></a></p>
+        </div>
+      </div>
+      
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="subtitle is-4">Groceries</p>
+          <p><a href="underconstruction.html"><img src="./groceries-wh.png" width="80px"></a></p>
+        </div>  
+      </div>
+    </nav>
+
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="subtitle is-4">Medical</p>
+          <p><a href="underconstruction.html"><img src="./medical-wh.png" width="80px"></a></p>
+        </div>
+      </div>
+
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="subtitle is-4">Calendar</p>
+          <p><a href="underconstruction.html"><img src="./calendar-wh.png" width="80px"></a></p>
+        </div>
+      </div>
+      
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="subtitle is-4">Fitness</p>
+          <p><a href="underconstruction.html"><img src="./fitness-wh.png" width="80px"></a></p>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <script type="text/javascript" src="./main.js"></script>
+  <script src="./logout.js"></script>
+</body>
+
+</html>

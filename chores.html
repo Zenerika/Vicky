@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TBH Chores</title>
+  <!-- load the fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet">
+  <!-- load fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- load jquery-ui css -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- load main css -->
+  <link rel="stylesheet" href="./main.css">
+  <!-- load chores.css -->
+  <link rel="stylesheet" href="./chores.css">
+
+  
+  <!-- load jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+  <!-- load jquery-ui -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- load firebase api for login-->
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+  <!-- load firebase firestore api for database -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+  <!-- load firebase firestore auth for logging out -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
+
+</head>
+
+<body>
+  
+    <!-- navbar -->
+    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="home.html">
+          <img src="./tbh-logo-wh-hires.png">
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons" id="btnLogout">
+            <a class="button is-primary">
+              Log Out
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+  
+<!-- quote api 1 -->
+<div class="quote">"To Thy Own Self Be True"</div>
+
+
+  <!-- task form -->
+<div class="column1">
+    <div class="taskForm">
+        <form id="taskCard">
+          <p class="choreHint">Add a New Chore</p>
+          <p>Chore:<div class="select is-primary">
+            <select name="task" id="taskName">
+                <option value="fas fa-utensils fa-3x">Wash the dishes</option> <!-- just change the value to whatever class name Font Awesome requires -->
+                <option value="fas fa-credit-card fa-3x">Pay bills</option>
+                <option value="fas fa-broom fa-3x">Sweep</option>
+                <option value="fas fa-trash fa-3x">Take out trash</option>
+                <option value="fas fa-tshirt fa-3x">Laundry</option>
+                <option value="fas fa-book fa-3x">Homework</option>
+                <option value="fas fa-car fa-3x">Wash Car</option>
+                <option value="fas fa-oil-can fa-3x">Oil change</option>
+                <option value="fas fa-dog fa-3x">Walk the dog</option>
+                <option value="fas fa-bone fa-3x">Feed the dog</option>
+              </select>
+            </div>
+          <p>Deadline:<input name="dateDeadline" class="input is-primary" id="datepicker"></p>
+          <p>Family Member:
+            <div class="select is-primary">
+                  <select name="user" id="user">
+                    <option value="Zoe">Zoe</option>
+                    <option value="Marco">Marco</option>
+                    <option value="Bowie">Bowie</option>
+                    <option value="Cy">Cy</option>
+                  </select>
+             </div>
+          </p>
+          <br/>
+          <button class="formSubmit"><i class="fas fa-plus-circle"></i>  Submit</button>
+        </form>
+    </div>
+</div>
+           
+   
+      
+      <div class="tile">
+        <div class="tile is-ancestor">
+
+          <div class="tile is-parent is-vertical is-3">
+            <div class="name">
+              <p>Zoe</p>
+            </div>
+            <div class="tasks is-child" id="Zoe"></div>
+          </div>
+
+          <div class="tile is-parent is-vertical is-3">
+            <div class="name">
+              <p>Marco</p>
+            </div>
+            <div class="tile is-child tasks" id="Marco"></div>
+          </div>
+
+          <div class="tile is-parent is-vertical is-3">
+            <div class="name">
+              <p>Bowie</p>
+            </div>
+            <div class="tasks" id="Bowie"></div>
+          </div>
+
+          <div class="tile is-parent is-vertical is-3">
+            <div class="name">
+              <p>Cy</p>
+            </div>
+            <div class="tasks" id="Cy"></div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+
+  <script src="./database.js"></script> 
+  <script src="./app.js"></script> 
+
+</body>
+
+</html>
